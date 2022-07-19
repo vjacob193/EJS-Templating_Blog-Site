@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+
+
+<h1>Compose</h1>
+<!-- Button and input must be in a form w/ method=post in order to post.
+Action = route handled inside app.js -->
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+    <label for="">Title</label>
+    <input type="text" class = "form-control" name="postTitle" placeholder="Enter New Post Title">
+  </div>
+  <div class="form-group">
+    <label for="">Post</label>
+    <textarea class="form-control" name="postBody" rows="8" cols="80"></textarea>
+  </div>
+
+  <p><button type="submit" name="button" class="btn btn-primary">Publish</button></p>
+
+</form>
+
+
+
+<%- include("partials/footer"); -%>
